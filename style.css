@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+:root {
+  --primary-font: "Inter", sans-serif;
+  --bg-color: hsl(0, 0%, 8%);
+  --bg-card: hsl(0, 0%, 12%);
+  --btn-color: hsl(0, 0%, 20%);
+  --hover-color: hsl(75, 94%, 57%);
+  --heading-color: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  font-family: var(--primary-font);
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Profile Card Style */
+
+.profile-card {
+  width: 38.4rem;
+  background-color: var(--bg-card);
+  border-radius: 1.6rem;
+  padding: 4rem;
+  text-align: center;
+}
+
+.avatar img {
+  width: 9rem;
+  border-radius: 50%;
+  margin: 0 auto 2.4rem;
+}
+
+.name h1 {
+  color: var(--heading-color);
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  margin-bottom: 0.4rem;
+}
+
+.place p {
+  color: var(--hover-color);
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  margin-bottom: 2rem;
+}
+
+.position p {
+  color: hsl(0, 0%, 80%);
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  margin-bottom: 2.4rem;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.btn {
+  background-color: var(--btn-color);
+  color: var(--heading-color);
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  border-radius: 8px;
+  padding-block: 1.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: var(--hover-color);
+  color: var(--primary-font);
+}
+
+/* Media Queries */
+
+@media (max-width: 430px) {
+  .profile-card {
+    width: 32.5rem;
+    padding: 2.4rem;
+  }
+}
